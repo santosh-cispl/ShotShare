@@ -13,6 +13,6 @@
  */
 window.SHOTSHARE_CONFIG = {
   appKey: '4gce6ji4zka4xp7',
-  redirectUri: 'http://localhost:8080',
+  redirectUri: 'https://santosh-cispl.github.io/ShotShare',
   maxConcurrentUploads: 2
 };

@@ -38,7 +38,7 @@ Scripts load in order from `index.html`: jQuery 3.7.1 → jQuery UI 1.13.3 (date
 
 ## Deployment notes
 
-- `https://shotshare.example.com` is a placeholder in `index.html` (canonical, OG/Twitter tags, JSON-LD), `robots.txt` and `sitemap.xml`. Replace it with the real domain before going live; the README has a sed one-liner for this.
+- The live site is `https://santosh-cispl.github.io/ShotShare/` (GitHub Pages). That URL is hard-coded in `index.html` (canonical, OG/Twitter tags, JSON-LD), `robots.txt` and `sitemap.xml`; keep `redirectUri` in `js/config.js` blank so both the live site and localhost work.
 - Production must be HTTPS and its URL registered as a redirect URI.
 - A Dropbox app in development mode allows only a limited number of users until "Enable additional users" is clicked or production status is approved in the App Console.
 - `img/og-image.png` and `img/apple-touch-icon.png` are rendered images of the logo. Regenerate them if the logo SVG in `index.html` (the `.brand-mark` element and the favicon data URI) changes.
