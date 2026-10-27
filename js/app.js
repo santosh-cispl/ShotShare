@@ -152,6 +152,10 @@
     $('.nav-link').removeClass('active').removeAttr('aria-current')
       .filter('[data-view="' + name + '"]').addClass('active').attr('aria-current', 'page');
     if (name === 'gallery' && !state.galleryLoaded && !state.galleryLoading) loadGallery();
+    // Give the page keyboard focus so Ctrl/⌘ V works without clicking first.
+    if (name === 'upload' && !$(document.activeElement).is('input, textarea, select, [contenteditable]')) {
+      $('#dropzone')[0].focus({ preventScroll: true });
+    }
   }
 
   function route() {
